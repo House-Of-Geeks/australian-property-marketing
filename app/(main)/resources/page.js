@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import NewsletterForm from './NewsletterForm'
 import styles from './page.module.css'
 
 export const metadata = {
@@ -76,14 +77,7 @@ export default function ResourcesPage() {
 
       <section className={styles.newsletter}>
         <div className="container">
-          <div className={styles.newsletterCard}>
-            <h2>Get Insights Delivered</h2>
-            <p>Practical marketing strategies for agency principals. No spam. Unsubscribe anytime.</p>
-            <form className={styles.newsletterForm}>
-              <input type="email" placeholder="Your email address" required />
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
+          <NewsletterForm />
         </div>
       </section>
     </div>

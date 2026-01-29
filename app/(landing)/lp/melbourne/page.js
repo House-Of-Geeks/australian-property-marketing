@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import LandingForm from '../LandingForm'
 import styles from '../landing.module.css'
 
 export const metadata = {
@@ -45,38 +46,7 @@ export default function MelbourneLP() {
       </section>
 
       <section className={styles.form} id="book">
-        <div className={styles.formContent}>
-          <h2>Book Your Discovery Call</h2>
-          <form>
-            <div className={styles.formRow}>
-              <input type="text" name="name" placeholder="Your Name" required />
-              <input type="email" name="email" placeholder="Email Address" required />
-            </div>
-            <div className={styles.formRow}>
-              <input type="tel" name="phone" placeholder="Phone Number" required />
-              <input type="text" name="agency" placeholder="Agency Name" required />
-            </div>
-            <div className={styles.formRow}>
-              <select name="agents" required>
-                <option value="">Number of Agents</option>
-                <option value="1-10">1-10</option>
-                <option value="11-20">11-20</option>
-                <option value="21-50">21-50</option>
-                <option value="50+">50+</option>
-              </select>
-              <select name="spend" required>
-                <option value="">Monthly Marketing Spend</option>
-                <option value="under-5k">Under $5,000</option>
-                <option value="5k-10k">$5,000 - $10,000</option>
-                <option value="10k-20k">$10,000 - $20,000</option>
-                <option value="20k+">$20,000+</option>
-              </select>
-            </div>
-            <input type="hidden" name="location" value="melbourne" />
-            <button type="submit" className={styles.submitBtn}>Book Your Discovery Call</button>
-          </form>
-          <p className={styles.note}>For independent Melbourne agencies doing $2M+ in annual GCI</p>
-        </div>
+        <LandingForm location="melbourne" note="For independent Melbourne agencies doing $2M+ in annual GCI" />
       </section>
 
       <footer className={styles.footer}>
