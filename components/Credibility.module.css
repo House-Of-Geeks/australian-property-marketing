@@ -2,7 +2,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  grid-template-columns: 1fr 1.2fr;
   gap: var(--space-2xl);
   align-items: center;
 }
@@ -15,12 +15,11 @@
 
 .visual.visible { opacity: 1; transform: translateX(0); }
 
-.imageWrap { position: relative; display: inline-block; }
+.imageWrap { position: relative; width: 100%; max-width: 400px; }
 
 .image {
   position: relative;
   width: 100%;
-  max-width: 400px;
   aspect-ratio: 4 / 5;
   border-radius: 24px;
   overflow: hidden;
