@@ -1,0 +1,96 @@
+.faq { padding: var(--space-3xl) 0; background: var(--pure-white); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.header {
+  position: sticky;
+  top: 120px;
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s var(--ease-out-expo);
+}
+
+.header.visible { opacity: 1; transform: translateX(0); }
+
+.headline { color: var(--charcoal); margin-bottom: var(--space-md); }
+.subhead { color: var(--charcoal-soft); font-size: 1.125rem; }
+
+.list { display: flex; flex-direction: column; gap: 0; }
+
+.list.visible .item { opacity: 1; transform: translateX(0); }
+
+.item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+
+.item:first-child { border-top: 1px solid rgba(0, 0, 0, 0.06); }
+
+.question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  padding: var(--space-lg) 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--charcoal);
+  transition: color 0.3s ease;
+}
+
+.question:hover { color: var(--coral); }
+
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--soft-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s var(--ease-out-expo);
+}
+
+.icon svg { transition: transform 0.3s var(--ease-out-expo); }
+
+.itemOpen .icon { background: var(--coral); color: var(--pure-white); }
+.itemOpen .icon svg { transform: rotate(45deg); }
+
+.answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.4s var(--ease-out-expo);
+}
+
+.itemOpen .answer { grid-template-rows: 1fr; }
+
+.answerInner { overflow: hidden; }
+
+.answerInner p {
+  padding-bottom: var(--space-lg);
+  color: var(--charcoal-soft);
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: var(--space-2xl); }
+  .header { position: static; }
+}
+
+@media (max-width: 600px) {
+  .question { font-size: 1.0625rem; }
+}

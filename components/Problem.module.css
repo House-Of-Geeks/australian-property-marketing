@@ -1,0 +1,247 @@
+.problem {
+  padding: var(--space-3xl) 0;
+  background: var(--pure-white);
+  position: relative;
+}
+
+.problem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.08), transparent);
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.content {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s var(--ease-out-expo);
+}
+
+.content.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.headline {
+  margin-bottom: var(--space-xl);
+  color: var(--charcoal);
+}
+
+.headlineEm {
+  display: block;
+  font-style: italic;
+  color: var(--charcoal-soft);
+}
+
+.body {
+  margin-bottom: var(--space-xl);
+}
+
+.body p {
+  margin-bottom: var(--space-md);
+  color: var(--charcoal-soft);
+}
+
+.insight {
+  background: var(--soft-grey);
+  border-radius: 16px;
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+}
+
+.insightHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: var(--space-lg);
+}
+
+.insightHeader svg {
+  color: var(--coral);
+}
+
+.insightStats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-xl);
+  margin-bottom: var(--space-lg);
+  padding: var(--space-lg) 0;
+}
+
+.insightStat {
+  text-align: center;
+}
+
+.statOld, .statNew {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.statOld {
+  color: var(--charcoal-soft);
+  text-decoration: line-through;
+  text-decoration-color: var(--coral);
+}
+
+.statNew {
+  color: var(--coral);
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: var(--charcoal-soft);
+  line-height: 1.4;
+}
+
+.insightArrow {
+  color: var(--coral);
+  opacity: 0.5;
+}
+
+.insightText {
+  text-align: center;
+  font-weight: 500;
+  color: var(--charcoal);
+  margin: 0;
+}
+
+.conclusion p {
+  color: var(--charcoal-soft);
+  margin-bottom: var(--space-md);
+}
+
+.conclusionStrong {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--coral) !important;
+  margin-top: var(--space-md);
+}
+
+.visual {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s var(--ease-out-expo) 0.2s;
+}
+
+.visual.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.funnel {
+  position: relative;
+  padding: var(--space-lg);
+}
+
+.funnelStage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-radius: 8px;
+  margin-bottom: 2px;
+  transition: transform 0.3s var(--ease-out-expo);
+}
+
+.funnelStage:hover {
+  transform: scale(1.02);
+}
+
+.funnelStage1 {
+  background: linear-gradient(135deg, var(--charcoal) 0%, var(--charcoal-soft) 100%);
+  color: var(--pure-white);
+}
+
+.funnelStage2 {
+  background: linear-gradient(135deg, #4a4a4a 0%, #5a5a5a 100%);
+  color: var(--pure-white);
+  margin-left: 10%;
+  margin-right: 2%;
+}
+
+.funnelStage3 {
+  background: linear-gradient(135deg, #6a6a6a 0%, #7a7a7a 100%);
+  color: var(--pure-white);
+  margin-left: 20%;
+  margin-right: 4%;
+}
+
+.funnelStage4 {
+  background: linear-gradient(135deg, var(--coral) 0%, var(--coral-dark) 100%);
+  color: var(--pure-white);
+  margin-left: 30%;
+  margin-right: 6%;
+}
+
+.funnelLabel {
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.funnelValue {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.funnelLeak {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.625rem var(--space-md);
+  margin-left: 5%;
+  margin-right: 1%;
+  font-size: 0.8125rem;
+  color: var(--charcoal-soft);
+  border-left: 2px dashed rgba(240, 92, 62, 0.3);
+}
+
+.funnelLeakNum {
+  color: var(--coral);
+  font-weight: 600;
+}
+
+.visualCaption {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--charcoal-soft);
+  margin-top: var(--space-lg);
+  font-style: italic;
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  .visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .insightStats {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .insightArrow {
+    transform: rotate(90deg);
+  }
+}

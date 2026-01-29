@@ -1,0 +1,80 @@
+.about { padding-top: 80px; }
+
+.hero {
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  background: linear-gradient(135deg, var(--soft-grey) 0%, var(--warm-white) 100%);
+  text-align: center;
+}
+
+.label { display: inline-block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; color: var(--coral); margin-bottom: var(--space-md); }
+.headline { color: var(--charcoal); max-width: 800px; margin: 0 auto; }
+
+.story { padding: var(--space-3xl) 0; background: var(--pure-white); }
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--space-3xl);
+  align-items: start;
+}
+
+.storyImage {
+  position: sticky;
+  top: 120px;
+}
+
+.imagePlaceholder {
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(135deg, var(--soft-grey) 0%, #e8e8e8 100%);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.imagePlaceholder svg { opacity: 0.3; color: var(--charcoal-soft); }
+.imagePlaceholder span { font-family: var(--font-display); font-size: 1.5rem; font-style: italic; color: var(--charcoal); }
+.imageSubtitle { font-family: var(--font-body) !important; font-size: 0.875rem !important; font-style: normal !important; color: var(--charcoal-soft) !important; }
+
+.storyContent p {
+  font-size: 1.125rem;
+  color: var(--charcoal-soft);
+  margin-bottom: var(--space-md);
+  line-height: 1.7;
+}
+
+.storyContent strong { color: var(--charcoal); }
+
+.signature {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.signatureName { display: block; font-family: var(--font-display); font-size: 1.5rem; font-style: italic; color: var(--charcoal); }
+.signatureTitle { font-size: 0.875rem; color: var(--charcoal-soft); }
+
+.values { padding: var(--space-3xl) 0; background: var(--charcoal); }
+
+.sectionTitle { text-align: center; color: var(--pure-white); margin-bottom: var(--space-2xl); }
+
+.valuesGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-xl); }
+
+.valueItem {
+  text-align: center;
+  padding: var(--space-xl);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.valueItem h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--pure-white); margin-bottom: var(--space-md); }
+.valueItem p { color: rgba(255, 255, 255, 0.7); line-height: 1.6; }
+
+@media (max-width: 1024px) {
+  .storyGrid { grid-template-columns: 1fr; }
+  .storyImage { position: static; max-width: 300px; margin: 0 auto var(--space-2xl); }
+  .valuesGrid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,156 @@
+.offer { padding: var(--space-3xl) 0; background: var(--soft-grey); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 420px);
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+.content {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s var(--ease-out-expo);
+}
+
+.content.visible { opacity: 1; transform: translateX(0); }
+
+.headline { color: var(--charcoal); margin-bottom: var(--space-lg); }
+
+.intro { font-size: 1.125rem; color: var(--charcoal-soft); margin-bottom: var(--space-xl); }
+
+.includedTitle {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--charcoal);
+  margin-bottom: var(--space-lg);
+}
+
+.includedList { list-style: none; display: flex; flex-direction: column; gap: var(--space-md); }
+
+.includedItem {
+  display: flex;
+  gap: var(--space-md);
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.6s var(--ease-out-expo);
+}
+
+.content.visible .includedItem { opacity: 1; transform: translateX(0); }
+
+.includedCheck {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--coral);
+  color: var(--pure-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.includedText { display: flex; flex-direction: column; }
+.includedText strong { color: var(--charcoal); font-weight: 600; margin-bottom: 0.125rem; }
+.includedText span { color: var(--charcoal-soft); font-size: 0.9375rem; }
+
+.card {
+  position: sticky;
+  top: 100px;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s var(--ease-out-expo) 0.2s;
+}
+
+.card.visible { opacity: 1; transform: translateY(0); }
+
+.cardInner {
+  background: var(--pure-white);
+  border-radius: 24px;
+  padding: var(--space-xl);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.cardHeader {
+  text-align: center;
+  padding-bottom: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.cardLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--coral);
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.cardPrice { display: flex; align-items: flex-start; justify-content: center; gap: 0.25rem; }
+.cardCurrency { font-family: var(--font-display); font-size: 1.5rem; color: var(--charcoal); margin-top: 0.5rem; }
+.cardAmount { font-family: var(--font-display); font-size: 4rem; line-height: 1; color: var(--charcoal); }
+.cardGst { font-size: 0.875rem; color: var(--charcoal-soft); margin-top: auto; margin-bottom: 0.5rem; }
+
+.cardDetails { display: flex; flex-direction: column; gap: var(--space-md); margin-bottom: var(--space-xl); }
+
+.cardDetail {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--charcoal-soft);
+  font-size: 0.9375rem;
+}
+
+.cardDetail svg { color: var(--coral); flex-shrink: 0; }
+.cardDetail strong { color: var(--charcoal); }
+
+.cardCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1.125rem 2rem;
+  background: var(--coral);
+  color: var(--pure-white);
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  transition: all 0.4s var(--ease-out-expo);
+  box-shadow: 0 4px 16px rgba(240, 92, 62, 0.3), 0 1px 2px rgba(240, 92, 62, 0.2);
+}
+
+.cardCta:hover {
+  background: var(--coral-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(240, 92, 62, 0.4), 0 2px 4px rgba(240, 92, 62, 0.2);
+}
+
+.cardCta svg { transition: transform 0.3s var(--ease-out-expo); }
+.cardCta:hover svg { transform: translateX(4px); }
+
+.cardNote { text-align: center; font-size: 0.8125rem; color: var(--charcoal-soft); margin-top: var(--space-md); }
+
+.cardGuarantee {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+  padding: var(--space-lg);
+  background: rgba(240, 92, 62, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(240, 92, 62, 0.1);
+}
+
+.cardGuarantee svg { color: var(--coral); flex-shrink: 0; }
+.cardGuarantee strong { display: block; color: var(--charcoal); font-size: 0.9375rem; margin-bottom: 0.25rem; }
+.cardGuarantee span { font-size: 0.8125rem; color: var(--charcoal-soft); line-height: 1.5; }
+
+@media (max-width: 1024px) {
+  .grid { grid-template-columns: 1fr; gap: var(--space-2xl); }
+  .card { position: static; max-width: 400px; }
+}
