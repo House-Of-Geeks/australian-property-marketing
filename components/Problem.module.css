@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-3xl);
-  align-items: center;
+  align-items: start;
 }
 
 .content {
@@ -161,6 +161,8 @@
   opacity: 0;
   transform: translateX(40px);
   transition: all 0.8s var(--ease-out-expo) 0.2s;
+  position: sticky;
+  top: 120px;
 }
 
 .visual.visible {
