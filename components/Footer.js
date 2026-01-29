@@ -20,9 +20,10 @@ export default function Footer() {
           <div className={styles.nav}>
             <div className={styles.navGroup}>
               <h4 className={styles.navTitle}>Services</h4>
-              <Link href="/audit" className={styles.navLink}>Profitability Audit</Link>
-              <Link href="/services/retainer" className={styles.navLink}>Full Service Retainer</Link>
-              <Link href="/services/creative" className={styles.navLink}>Creative Services</Link>
+              <Link href="/services" className={styles.navLink}>Real Estate Agents</Link>
+              <Link href="/services" className={styles.navLink}>Buyers Agents</Link>
+              <Link href="/services" className={styles.navLink}>Property Investors</Link>
+              <Link href="/services" className={styles.navLink}>Builders</Link>
             </div>
 
             <div className={styles.navGroup}>
