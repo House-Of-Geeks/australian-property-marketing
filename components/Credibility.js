@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
+import Image from 'next/image'
 import styles from './Credibility.module.css'
 
 export default function Credibility() {
@@ -22,14 +23,13 @@ export default function Credibility() {
           <div className={`${styles.visual} ${isVisible ? styles.visible : ''}`}>
             <div className={styles.imageWrap}>
               <div className={styles.image}>
-                <div className={styles.imagePlaceholder}>
-                  <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
-                    <circle cx="12" cy="7" r="4"/>
-                  </svg>
-                  <span>Andy</span>
-                  <span className={styles.imageSubtitle}>Founder</span>
-                </div>
+                <Image
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80&fit=crop"
+                  alt="Andy - Founder of Australian Property Marketing"
+                  fill
+                  sizes="(max-width: 1024px) 320px, 400px"
+                  className={styles.photo}
+                />
                 <div className={styles.badge}>
                   <span className={styles.badgeNumber}>11+</span>
                   <span className={styles.badgeText}>Years in<br/>Real Estate</span>
