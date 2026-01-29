@@ -56,6 +56,12 @@ export default function Problem() {
               </div>
             </div>
             <p className={styles.insightText}>The leads got more expensive. The conversion rate stayed the same.</p>
+            <div className={styles.insightCost}>
+              <span className={styles.insightCostLabel}>100 leads at $416 each = $41,600 spent.</span>
+              <span className={styles.insightCostLabel}>At a 2% conversion rate, that is 2 listings.</span>
+              <span className={styles.insightCostValue}>$20,800</span>
+              <span className={styles.insightCostLabel}>per listing in marketing costs alone.</span>
+            </div>
           </div>
 
           <div className={styles.conclusion}>
