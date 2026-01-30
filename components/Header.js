@@ -30,9 +30,9 @@ export default function Header() {
           </Link>
 
           <nav className={`${styles.desktopNav}`}>
+            <Link href="/about" className={styles.link}>About</Link>
             <Link href="/services" className={styles.link}>Services</Link>
             <Link href="/results" className={styles.link}>Results</Link>
-            <Link href="/about" className={styles.link}>About</Link>
             <Link href="/resources" className={styles.link}>Resources</Link>
             <Link href="/contact" className={styles.link}>Contact</Link>
             <a href="tel:1300APMNOW" className={styles.phone}>
@@ -59,9 +59,9 @@ export default function Header() {
       </header>
 
       <nav className={`${styles.mobileNav} ${menuOpen ? styles.navOpen : ''}`}>
+        <Link href="/about" className={styles.link} onClick={() => setMenuOpen(false)}>About</Link>
         <Link href="/services" className={styles.link} onClick={() => setMenuOpen(false)}>Services</Link>
         <Link href="/results" className={styles.link} onClick={() => setMenuOpen(false)}>Results</Link>
-        <Link href="/about" className={styles.link} onClick={() => setMenuOpen(false)}>About</Link>
         <Link href="/resources" className={styles.link} onClick={() => setMenuOpen(false)}>Resources</Link>
         <Link href="/contact" className={styles.link} onClick={() => setMenuOpen(false)}>Contact</Link>
         <a href="tel:1300APMNOW" className={styles.mobilePhone}>
