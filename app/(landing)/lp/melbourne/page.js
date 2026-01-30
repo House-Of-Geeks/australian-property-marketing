@@ -17,7 +17,7 @@ export default function MelbourneLP() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Real Estate Marketing for Melbourne Agencies</h1>
-          <p className={styles.subhead}>Melbourne's market demands precision. Your marketing should generate listings, not just leads. We help independent agencies across Melbourne's inner east, bayside, and greater metro convert more leads into signed agency agreements.</p>
+          <p className={styles.subhead}>Melbourne's market demands precision. Your marketing should generate listings, not just leads. We help agencies across Melbourne's inner east, bayside, and greater metro convert more leads into signed agency agreements.</p>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ export default function MelbourneLP() {
       </section>
 
       <section className={styles.form} id="book">
-        <LandingForm location="melbourne" note="For independent Melbourne agencies doing $2M+ in annual GCI" />
+        <LandingForm location="melbourne" note="For Melbourne agencies doing $2M+ in annual GCI" />
       </section>
 
       <footer className={styles.footer}>

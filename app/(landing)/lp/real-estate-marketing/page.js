@@ -46,7 +46,7 @@ export default function RealEstateMarketingLP() {
       </section>
 
       <section className={styles.form} id="book">
-        <LandingForm location="real-estate-marketing" note="For independent agencies doing $2M+ in annual GCI" />
+        <LandingForm location="real-estate-marketing" note="For agencies doing $2M+ in annual GCI" />
       </section>
 
       <footer className={styles.footer}>

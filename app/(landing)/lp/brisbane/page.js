@@ -17,7 +17,7 @@ export default function BrisbaneLP() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Real Estate Marketing for Brisbane Agencies</h1>
-          <p className={styles.subhead}>Brisbane's property market is growing. Your marketing should generate listings, not just leads. We help independent agencies across Brisbane's northside, southside, and greater metro convert more leads into signed agency agreements.</p>
+          <p className={styles.subhead}>Brisbane's property market is growing. Your marketing should generate listings, not just leads. We help agencies across Brisbane's northside, southside, and greater metro convert more leads into signed agency agreements.</p>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ export default function BrisbaneLP() {
       </section>
 
       <section className={styles.form} id="book">
-        <LandingForm location="brisbane" note="For independent Brisbane agencies doing $2M+ in annual GCI" />
+        <LandingForm location="brisbane" note="For Brisbane agencies doing $2M+ in annual GCI" />
       </section>
 
       <footer className={styles.footer}>

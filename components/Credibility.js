@@ -46,7 +46,7 @@ export default function Credibility() {
               <p>Not a marketing person who read a book about real estate. Someone who has knocked on doors. Made the cold calls. Lost listings to agents with better marketing. Won listings because the marketing was right.</p>
               <p>We built this company because we got tired of marketing agencies who could not answer a simple question:</p>
               <blockquote className={styles.quote}>How many listings did your work actually generate?</blockquote>
-              <p>Now we work with independent agencies who want that answer. And who want to make the number bigger.</p>
+              <p>Now we work with agencies who want that answer. And who want to make the number bigger.</p>
               <p>We have sat where you sit. We know the difference between a tyre-kicker and a genuine seller. We know what it costs to lose a listing to an agent with better marketing. That is why we only work with agencies who are serious about fixing the problem.</p>
             </div>
             <div className={styles.signature}>

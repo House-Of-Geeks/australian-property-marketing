@@ -2,7 +2,7 @@ import './globals.css'
 
 export const metadata = {
   title: 'Australian Property Marketing | Marketing Measured in Listings',
-  description: 'We measure listings. Not likes. Real estate marketing for independent agencies doing $2M+ in annual GCI.',
+  description: 'We measure listings. Not likes. Real estate marketing for agencies doing $2M+ in annual GCI.',
   keywords: 'real estate marketing Australia, real estate marketing agency, property marketing Australia, real estate agent marketing, real estate lead generation',
   openGraph: {
     title: 'Australian Property Marketing',

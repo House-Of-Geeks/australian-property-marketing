@@ -3,7 +3,7 @@ import styles from './page.module.css'
 
 export const metadata = {
   title: 'Contact | Australian Property Marketing',
-  description: 'Get in touch with Australian Property Marketing. We help independent real estate agencies generate more listings.',
+  description: 'Get in touch with Australian Property Marketing. We help real estate agencies generate more listings.',
 }
 
 export default function ContactPage() {

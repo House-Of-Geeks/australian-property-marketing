@@ -3,12 +3,12 @@ import styles from './page.module.css'
 
 export const metadata = {
   title: 'Results | Australian Property Marketing',
-  description: 'Numbers. Not promises. Real case studies and results from independent real estate agencies across Australia.',
+  description: 'Numbers. Not promises. Real case studies and results from real estate agencies across Australia.',
 }
 
 const caseStudies = [
   {
-    agency: 'Independent agency',
+    agency: 'Agency',
     location: 'Newcastle',
     size: '18 agents',
     problem: 'Spending $14,000 per month on marketing. Leads were coming in but listings were flat. No visibility on what was working.',
@@ -19,7 +19,7 @@ const caseStudies = [
     title: 'Principal'
   },
   {
-    agency: 'Independent agency',
+    agency: 'Agency',
     location: 'Melbourne',
     size: '24 agents',
     problem: 'Multiple marketing campaigns running but no visibility on which ones actually generated listings vs just leads.',
@@ -30,7 +30,7 @@ const caseStudies = [
     title: 'Director'
   },
   {
-    agency: 'Independent agency',
+    agency: 'Agency',
     location: 'Brisbane',
     size: '15 agents',
     problem: 'Years of wasted marketing spend with no accountability. Low conversion rate of 1.2%.',

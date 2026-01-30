@@ -4,7 +4,7 @@ import styles from './page.module.css'
 
 export const metadata = {
   title: 'Resources | Australian Property Marketing',
-  description: 'Insights and resources for independent real estate agency principals. Marketing strategies, conversion tips, and industry analysis.',
+  description: 'Insights and resources for real estate agency principals. Marketing strategies, conversion tips, and industry analysis.',
 }
 
 const articles = [

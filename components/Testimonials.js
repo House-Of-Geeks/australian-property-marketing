@@ -50,7 +50,7 @@ export default function Testimonials() {
       <div className="container">
         <div className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
           <span className={styles.label}>Client Results</span>
-          <p className={styles.socialProof}>Trusted by independent agencies across Australia</p>
+          <p className={styles.socialProof}>Trusted by agencies across Australia</p>
           <h2 className={styles.headline}>Numbers. Not Promises.</h2>
           <p className={styles.subhead}>Real results from real agency principals. In their own words.</p>
         </div>

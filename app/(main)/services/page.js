@@ -11,7 +11,7 @@ const verticals = [
     title: 'Real Estate Agents',
     headline: 'Marketing That Wins Listings',
     copy: 'You are competing against agents with bigger budgets and better brand recognition. We level the playing field. Lead generation that targets genuine sellers. Conversion systems that stop leads falling through the cracks. Creative that positions you as the obvious choice.',
-    subtext: 'For independent agents and boutique agencies who want more listings without wasting money on marketing that does not convert.',
+    subtext: 'For agents and boutique agencies who want more listings without wasting money on marketing that does not convert.',
   },
   {
     title: 'Buyers Agents',

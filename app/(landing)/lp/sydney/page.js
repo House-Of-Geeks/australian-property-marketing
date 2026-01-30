@@ -17,7 +17,7 @@ export default function SydneyLP() {
       <section className={styles.hero}>
         <div className={styles.heroContent}>
           <h1>Real Estate Marketing for Sydney Agencies</h1>
-          <p className={styles.subhead}>Sydney's property market is competitive. Your marketing should generate listings, not just leads. We help independent agencies in Sydney's inner west, eastern suburbs, north shore, and beyond convert more leads into signed agency agreements.</p>
+          <p className={styles.subhead}>Sydney's property market is competitive. Your marketing should generate listings, not just leads. We help agencies in Sydney's inner west, eastern suburbs, north shore, and beyond convert more leads into signed agency agreements.</p>
         </div>
       </section>
 
@@ -46,7 +46,7 @@ export default function SydneyLP() {
       </section>
 
       <section className={styles.form} id="book">
-        <LandingForm location="sydney" note="For independent Sydney agencies doing $2M+ in annual GCI" />
+        <LandingForm location="sydney" note="For Sydney agencies doing $2M+ in annual GCI" />
       </section>
 
       <footer className={styles.footer}>

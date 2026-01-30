@@ -13,7 +13,7 @@ export default function Hero() {
       <div className={`${styles.content} container`}>
         <div className={`${styles.badge} animate-fade-up`}>
           <span className={styles.badgeDot}></span>
-          For independent agencies doing $2M+ in annual GCI
+          For agencies doing $2M+ in annual GCI
         </div>
 
         <h1 className={`${styles.headline} animate-fade-up animate-delay-1`}>

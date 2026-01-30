@@ -107,7 +107,7 @@ export default function AuditPage() {
         <div className="container">
           <h2 className={styles.sectionTitle}>Who This Is For</h2>
           <ul className={styles.whoList}>
-            <li>Independent real estate agencies doing $2M or more in annual GCI.</li>
+            <li>Real estate agencies doing $2M or more in annual GCI.</li>
             <li>Agencies currently spending money on marketing.</li>
             <li>Principals who want to know what is actually working.</li>
             <li>Owners who are tired of reports full of impressions and clicks instead of listings.</li>
