@@ -23,6 +23,16 @@ export default function Header() {
 
   return (
     <>
+      <div className={`${styles.topBar} ${scrolled ? styles.topBarHidden : ''}`}>
+        <div className={styles.topBarInner}>
+          <a href="mailto:info@australianpropertymarketing.com.au" className={styles.topBarEmail}>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+            </svg>
+            info@australianpropertymarketing.com.au
+          </a>
+        </div>
+      </div>
       <header className={`${styles.header} ${scrolled ? styles.scrolled : ''}`}>
         <div className={styles.inner}>
           <Link href="/" className={styles.logo}>
@@ -30,17 +40,12 @@ export default function Header() {
           </Link>
 
           <nav className={`${styles.desktopNav}`}>
+            <Link href="/" className={styles.link}>Home</Link>
             <Link href="/about" className={styles.link}>About</Link>
             <Link href="/services" className={styles.link}>Services</Link>
             <Link href="/results" className={styles.link}>Results</Link>
             <Link href="/resources" className={styles.link}>Resources</Link>
             <Link href="/contact" className={styles.link}>Contact</Link>
-            <a href="mailto:info@australianpropertymarketing.com.au" className={styles.phone}>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-              </svg>
-              info@australianpropertymarketing.com.au
-            </a>
           </nav>
 
           <Link href="/contact" className={styles.cta}>
@@ -59,6 +64,7 @@ export default function Header() {
       </header>
 
       <nav className={`${styles.mobileNav} ${menuOpen ? styles.navOpen : ''}`}>
+        <Link href="/" className={styles.link} onClick={() => setMenuOpen(false)}>Home</Link>
         <Link href="/about" className={styles.link} onClick={() => setMenuOpen(false)}>About</Link>
         <Link href="/services" className={styles.link} onClick={() => setMenuOpen(false)}>Services</Link>
         <Link href="/results" className={styles.link} onClick={() => setMenuOpen(false)}>Results</Link>
