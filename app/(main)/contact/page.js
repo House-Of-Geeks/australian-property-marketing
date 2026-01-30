@@ -27,9 +27,12 @@ export default function ContactPage() {
                 <p>We respond within 24 hours</p>
               </div>
               <div className={styles.infoBlock}>
-                <h3>LinkedIn</h3>
-                <a href="https://linkedin.com/company/australian-property-marketing" className={styles.infoLink}>Follow us on LinkedIn</a>
-                <p>Industry insights and updates</p>
+                <h3>Follow Us</h3>
+                <a href="https://facebook.com/australianpropertymarketing" className={styles.infoLink}>Facebook</a>
+                <a href="https://instagram.com/australianpropertymarketing" className={styles.infoLink}>Instagram</a>
+                <a href="https://linkedin.com/company/australian-property-marketing" className={styles.infoLink}>LinkedIn</a>
+                <a href="https://youtube.com/@australianpropertymarketing" className={styles.infoLink}>YouTube</a>
+                <a href="https://x.com/auspropmktg" className={styles.infoLink}>X</a>
               </div>
               <div className={styles.audit}>
                 <h3>Ready to Talk?</h3>
