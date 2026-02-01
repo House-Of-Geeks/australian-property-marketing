@@ -41,6 +41,7 @@ const REQUIRED_FIELDS = {
   contact: ['name', 'email', 'subject', 'message'],
   audit: ['name', 'email', 'phone', 'agency', 'agents', 'spend'],
   landing: ['name', 'email', 'phone', 'agency', 'agents', 'spend'],
+  'postcode-takeover': ['name', 'email', 'phone', 'suburb'],
   newsletter: ['email'],
 }
 
@@ -53,6 +54,7 @@ function buildHtml(formType, data) {
     contact: 'New Contact Form Submission',
     audit: 'New Audit Discovery Call Request',
     landing: `New Landing Page Lead${data.location ? ` (${data.location})` : ''}`,
+    'postcode-takeover': `New Postcode Takeover Order${data.suburb ? ` — ${data.suburb}` : ''}`,
     newsletter: 'New Newsletter Subscription',
   }[formType]
 
@@ -98,6 +100,7 @@ export async function POST(request) {
       contact: `Contact: ${data.name} — ${data.subject}`,
       audit: `Audit Request: ${data.name} (${data.agency})`,
       landing: `LP Lead: ${data.name} (${data.agency})${data.location ? ` — ${data.location}` : ''}`,
+      'postcode-takeover': `Postcode Takeover: ${data.name} — ${data.suburb || ''}`,
       newsletter: `Newsletter: ${data.email}`,
     }[formType]
 
