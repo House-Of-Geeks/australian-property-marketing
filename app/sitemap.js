@@ -1,6 +1,6 @@
 import { articles } from '@/lib/articles'
 
-const BASE_URL = 'https://australianpropertymarketing.com.au'
+const BASE_URL = 'https://www.australianpropertymarketing.com.au'
 
 export default function sitemap() {
   const articleUrls = articles.map((article) => ({
