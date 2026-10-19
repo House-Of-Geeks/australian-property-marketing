@@ -1,5 +1,8 @@
 import './globals.css'
 import { JsonLd, organizationSchema, websiteSchema } from '@/lib/schema'
+import { Clarity } from '@/components/Clarity'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
+import { Quantcast } from '@/components/Quantcast'
 
 export const metadata = {
   title: 'Australian Property Marketing | Marketing Measured in Listings',
@@ -24,7 +27,12 @@ export default function RootLayout({ children }) {
         <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <JsonLd data={[organizationSchema, websiteSchema]} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Clarity id={process.env.NEXT_PUBLIC_CLARITY_ID ?? ""} />
+        <GoogleAnalytics id={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? ""} />
+        <Quantcast id="p-0nXpAVdp8GeS5" />
+      </body>
     </html>
   )
 }
